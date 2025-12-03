@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -24,64 +25,68 @@
                 opacity: 0;
                 transform: translateY(20px);
             }
+
             to {
                 opacity: 1;
                 transform: translateY(0);
             }
         }
-        
+
         .count-animation {
             animation: countUp 1s ease-out forwards;
         }
-        
+
         .gallery-container {
             scroll-snap-type: x mandatory;
             scroll-behavior: smooth;
         }
-        
+
         .gallery-item {
             scroll-snap-align: start;
         }
-        
+
         .fade-in {
             animation: fadeIn 0.8s ease-in;
         }
-        
+
         @keyframes fadeIn {
             from {
                 opacity: 0;
                 transform: translateY(30px);
             }
+
             to {
                 opacity: 1;
                 transform: translateY(0);
             }
         }
-        
+
         .slide-in-left {
             animation: slideInLeft 0.8s ease-out;
         }
-        
+
         @keyframes slideInLeft {
             from {
                 opacity: 0;
                 transform: translateX(-50px);
             }
+
             to {
                 opacity: 1;
                 transform: translateX(0);
             }
         }
-        
+
         .slide-in-right {
             animation: slideInRight 0.8s ease-out;
         }
-        
+
         @keyframes slideInRight {
             from {
                 opacity: 0;
                 transform: translateX(50px);
             }
+
             to {
                 opacity: 1;
                 transform: translateX(0);
@@ -89,6 +94,7 @@
         }
     </style>
 </head>
+
 <body class="bg-amber-50 font-sans">
     <!-- Header -->
     <header class="bg-gradient-to-r from-jci-blue via-jci-teal to-jci-blue text-white py-8 shadow-lg">
@@ -103,7 +109,9 @@
         <section class="mb-16 slide-in-left">
             <h2 class="text-3xl md:text-4xl font-bold italic mb-6 text-jci-blue">Qu'est ce que la JCI?</h2>
             <p class="text-lg md:text-xl leading-relaxed text-gray-700">
-                La <strong>JCI (Junior Chamber International)</strong> est une organisation mondiale de <strong>jeunes citoyens actifs âgés de 18 à 40 ans</strong> qui travaillent ensemble pour créer un <strong>impact positif</strong> dans leurs communautés.
+                La <strong>JCI (Junior Chamber International)</strong> est une organisation mondiale de <strong>jeunes
+                    citoyens actifs âgés de 18 à 40 ans</strong> qui travaillent ensemble pour créer un <strong>impact
+                    positif</strong> dans leurs communautés.
             </p>
         </section>
 
@@ -112,20 +120,26 @@
             <h2 class="text-3xl md:text-4xl font-bold italic mb-8 text-jci-blue">Quelques chiffres:</h2>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <!-- Formations -->
-                <div class="bg-white rounded-lg shadow-lg p-8 text-center transform hover:scale-105 transition-transform duration-300">
-                    <div class="text-5xl md:text-6xl font-bold text-jci-blue mb-4 count-animation" id="formations-count">0</div>
+                <div
+                    class="bg-white rounded-lg shadow-lg p-8 text-center transform hover:scale-105 transition-transform duration-300">
+                    <div class="text-5xl md:text-6xl font-bold text-jci-blue mb-4 count-animation"
+                        id="formations-count">0</div>
                     <div class="text-xl md:text-2xl font-semibold text-gray-700">Formations</div>
                 </div>
-                
+
                 <!-- Sessions -->
-                <div class="bg-white rounded-lg shadow-lg p-8 text-center transform hover:scale-105 transition-transform duration-300">
-                    <div class="text-5xl md:text-6xl font-bold text-jci-teal mb-4 count-animation" id="sessions-count">0</div>
+                <div
+                    class="bg-white rounded-lg shadow-lg p-8 text-center transform hover:scale-105 transition-transform duration-300">
+                    <div class="text-5xl md:text-6xl font-bold text-jci-teal mb-4 count-animation" id="sessions-count">0
+                    </div>
                     <div class="text-xl md:text-2xl font-semibold text-gray-700">Sessions</div>
                 </div>
-                
+
                 <!-- Collaborateurs -->
-                <div class="bg-white rounded-lg shadow-lg p-8 text-center transform hover:scale-105 transition-transform duration-300">
-                    <div class="text-5xl md:text-6xl font-bold text-jci-yellow mb-4 count-animation" id="collab-count">0</div>
+                <div
+                    class="bg-white rounded-lg shadow-lg p-8 text-center transform hover:scale-105 transition-transform duration-300">
+                    <div class="text-5xl md:text-6xl font-bold text-jci-yellow mb-4 count-animation" id="collab-count">0
+                    </div>
                     <div class="text-xl md:text-2xl font-semibold text-gray-700">Collaborateurs</div>
                 </div>
             </div>
@@ -154,95 +168,116 @@
             <h2 class="text-3xl md:text-4xl font-bold italic mb-8 text-jci-blue">Gallerie</h2>
             <div class="relative">
                 <!-- Gallery Container -->
-                <div id="gallery" class="flex overflow-x-auto gallery-container snap-x snap-mandatory gap-4 pb-4 scrollbar-hide" style="scrollbar-width: none; -ms-overflow-style: none;">
+                <div id="gallery"
+                    class="flex overflow-x-auto gallery-container snap-x snap-mandatory gap-4 pb-4 scrollbar-hide"
+                    style="scrollbar-width: none; -ms-overflow-style: none;">
                     <!-- Gallery Items -->
                     <div class="gallery-item flex-shrink-0 w-full md:w-1/2 lg:w-1/3">
                         <div class="bg-white rounded-lg shadow-lg overflow-hidden">
-                            <div class="h-64 bg-gradient-to-br from-jci-blue to-jci-teal flex items-center justify-center">
-                                <span class="text-white text-xl font-semibold">Image 1</span>
+                            <div
+                                class="h-64 bg-gradient-to-br from-jci-blue to-jci-teal flex items-center justify-center">
+                                <img src="https://scontent.cdninstagram.com/v/t51.82787-15/586715914_18070411613611624_3873286622780044432_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=105&ig_cache_key=Mzc3ODkzMTY3MzE0OTIzNDg3OQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjc4OHg2NjAuc2RyLkMzIn0%3D&_nc_ohc=mAK50Nc7CWgQ7kNvwFQ1OPI&_nc_oc=AdnogIA3msPFv3fBHhvp3oSfawimquzB35IDiJlwFIThyy9v3yE7sUbUUKanzl5cJqo&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&_nc_gid=vfwHNRQmACZKBrD7CX_TyA&oh=00_Afk-zA2nhCO0j2nsnGtjVrSWIgNFR7S7wZROqP2CLLCEsA&oe=69364EA8" alt="Image 3" class="w-full h-full object-cover">
+
                             </div>
-                            
+
                         </div>
                     </div>
-                    
+
                     <div class="gallery-item flex-shrink-0 w-full md:w-1/2 lg:w-1/3">
                         <div class="bg-white rounded-lg shadow-lg overflow-hidden">
-                            <div class="h-64 bg-gradient-to-br from-jci-teal to-jci-yellow flex items-center justify-center">
-                                <span class="text-white text-xl font-semibold">Image 2</span>
+                            <div
+                                class="h-64 bg-gradient-to-br from-jci-teal to-jci-yellow flex items-center justify-center">
+                                <img src="https://scontent.cdninstagram.com/v/t51.82787-15/572245656_18066887414611624_6877304958521557189_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=111&ig_cache_key=Mzc1MzQwMjEzOTYwODEyMTc2MQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjc4Nng2NTcuc2RyLkMzIn0%3D&_nc_ohc=hLFSzJdHYMIQ7kNvwG2vaU6&_nc_oc=AdmewnauEj6xI8vGExyz49QXM2fzpNvWuSMxX-CgCS4rr4GqP3jzgsOf96BGgRtprOA&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&_nc_gid=MRmPH24ZfyB-mXBxxKMiFQ&oh=00_AfluUnjZ6Z4SnJo84pnZftSFenrYvTlIwm6gAWd2iMhnTQ&oe=693655B0"
+                                    alt="Image 3" class="w-full h-full object-cover">
                             </div>
-                            
+
                         </div>
                     </div>
-                    
+
                     <div class="gallery-item flex-shrink-0 w-full md:w-1/2 lg:w-1/3">
                         <div class="bg-white rounded-lg shadow-lg overflow-hidden">
-                            <div class="h-64 bg-gradient-to-br from-jci-yellow to-jci-blue flex items-center justify-center">
-                                <span class="text-white text-xl font-semibold">Image 3</span>
+                            <div
+                                class="h-64 bg-gradient-to-br from-jci-yellow to-jci-blue flex items-center justify-center">
+                                <img src="https://scontent.cdninstagram.com/v/t51.82787-15/573069402_18066887423611624_8084363422784648511_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=101&ig_cache_key=Mzc1MzQwMjE0MDM0NjMzNzY2Ng%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjc4Nng2NTcuc2RyLkMzIn0%3D&_nc_ohc=aJGqV3d_88oQ7kNvwEsL9Sg&_nc_oc=AdlIQIxlJzncGDf1mWtfzK2ZnZfh4thhz_Sznjr3a3dKo93O_h7cgi-6gYKd80J9lSw&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&_nc_gid=MRmPH24ZfyB-mXBxxKMiFQ&oh=00_Afk3RTro71_2cZvgls0jLXFXwW6sCPvJm6clsLGV98D0wA&oe=6936351D" alt="Image 3" class="w-full h-full object-cover">
+
                             </div>
-                            
+
                         </div>
                     </div>
-                    
+
                     <!-- Additional gallery items -->
                     <div class="gallery-item flex-shrink-0 w-full md:w-1/2 lg:w-1/3">
                         <div class="bg-white rounded-lg shadow-lg overflow-hidden">
-                            <div class="h-64 bg-gradient-to-br from-jci-blue to-jci-yellow flex items-center justify-center">
-                                <span class="text-white text-xl font-semibold">Image 4</span>
+                            <div
+                                class="h-64 bg-gradient-to-br from-jci-blue to-jci-yellow flex items-center justify-center">
+                                <img src="https://scontent.cdninstagram.com/v/t51.82787-15/587517189_18070411583611624_74888463865545527_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=109&ig_cache_key=Mzc3ODkzMTY3MzE0MDg1MzI5MA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjc4OHg2NjAuc2RyLkMzIn0%3D&_nc_ohc=QlC2qpwsqbAQ7kNvwHuRXjH&_nc_oc=AdnAKA2ovLb9RVvVV7i_QU_2202hWMpsAnlVJ7-xDu8nkKQ0QMiszkqVZhtAggbSRjg&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&_nc_gid=vfwHNRQmACZKBrD7CX_TyA&oh=00_Afk-l4KYc4GC4pJV5hrJ1b3iq-BoCmNQTBjnH_h7hl-BCQ&oe=693643C1" alt="Image 3" class="w-full h-full object-cover">
+
                             </div>
-                            
+
                         </div>
                     </div>
-                    
+
                     <div class="gallery-item flex-shrink-0 w-full md:w-1/2 lg:w-1/3">
                         <div class="bg-white rounded-lg shadow-lg overflow-hidden">
-                            <div class="h-64 bg-gradient-to-br from-jci-teal to-jci-blue flex items-center justify-center">
-                                <span class="text-white text-xl font-semibold">Image 5</span>
+                            <div
+                                class="h-64 bg-gradient-to-br from-jci-teal to-jci-blue flex items-center justify-center">
+                                <img src="YOUR-IMAGE-LINK-HERE" alt="Image 3" class="w-full h-full object-cover">
+
                             </div>
-                            
+
                         </div>
                     </div>
-                    
+
                     <div class="gallery-item flex-shrink-0 w-full md:w-1/2 lg:w-1/3">
                         <div class="bg-white rounded-lg shadow-lg overflow-hidden">
-                            <div class="h-64 bg-gradient-to-br from-jci-yellow to-jci-teal flex items-center justify-center">
-                                <span class="text-white text-xl font-semibold">Image 6</span>
+                            <div
+                                class="h-64 bg-gradient-to-br from-jci-yellow to-jci-teal flex items-center justify-center">
+                                <img src="YOUR-IMAGE-LINK-HERE" alt="Image 3" class="w-full h-full object-cover">
+
                             </div>
-                            
+
                         </div>
                     </div>
-                    
+
                     <div class="gallery-item flex-shrink-0 w-full md:w-1/2 lg:w-1/3">
                         <div class="bg-white rounded-lg shadow-lg overflow-hidden">
-                            <div class="h-64 bg-gradient-to-br from-jci-blue to-jci-teal flex items-center justify-center">
-                                <span class="text-white text-xl font-semibold">Image 7</span>
+                            <div
+                                class="h-64 bg-gradient-to-br from-jci-blue to-jci-teal flex items-center justify-center">
+                                <img src="YOUR-IMAGE-LINK-HERE" alt="Image 3" class="w-full h-full object-cover">
+
                             </div>
-                            
+
                         </div>
                     </div>
-                    
+
                     <div class="gallery-item flex-shrink-0 w-full md:w-1/2 lg:w-1/3">
                         <div class="bg-white rounded-lg shadow-lg overflow-hidden">
-                            <div class="h-64 bg-gradient-to-br from-jci-teal to-jci-yellow flex items-center justify-center">
-                                <span class="text-white text-xl font-semibold">Image 8</span>
+                            <div
+                                class="h-64 bg-gradient-to-br from-jci-teal to-jci-yellow flex items-center justify-center">
+                                <img src="YOUR-IMAGE-LINK-HERE" alt="Image 3" class="w-full h-full object-cover">
+
                             </div>
-                            
+
                         </div>
                     </div>
                 </div>
-                
+
                 <!-- Navigation Arrows -->
-                <button id="prevBtn" class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-jci-blue text-white p-3 rounded-full shadow-lg hover:bg-opacity-90 transition-opacity z-10 hidden md:block">
+                <button id="prevBtn"
+                    class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-jci-blue text-white p-3 rounded-full shadow-lg hover:bg-opacity-90 transition-opacity z-10 hidden md:block">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7">
+                        </path>
                     </svg>
                 </button>
-                <button id="nextBtn" class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-jci-blue text-white p-3 rounded-full shadow-lg hover:bg-opacity-90 transition-opacity z-10 hidden md:block">
+                <button id="nextBtn"
+                    class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-jci-blue text-white p-3 rounded-full shadow-lg hover:bg-opacity-90 transition-opacity z-10 hidden md:block">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
                     </svg>
                 </button>
             </div>
-            
+
             <!-- Scroll Indicator -->
             <div class="flex justify-center mt-4 space-x-2">
                 <div class="w-2 h-2 rounded-full bg-jci-blue"></div>
@@ -257,21 +292,30 @@
             <div class="bg-white rounded-lg shadow-lg p-6 md:p-8 space-y-4">
                 <div class="flex items-center space-x-3">
                     <svg class="w-6 h-6 text-jci-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z">
+                        </path>
                     </svg>
-                    <a href="mailto:jci.arianaelmedina@gmail.com" class="text-lg text-jci-blue hover:underline">jci.arianaelmedina@gmail.com</a>
+                    <a href="mailto:jci.arianaelmedina@gmail.com"
+                        class="text-lg text-jci-blue hover:underline">jci.arianaelmedina@gmail.com</a>
                 </div>
                 <div class="flex items-center space-x-3">
                     <svg class="w-6 h-6 text-jci-teal" fill="currentColor" viewBox="0 0 24 24">
-                        <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"></path>
+                        <path
+                            d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z">
+                        </path>
                     </svg>
-                    <a href="https://www.instagram.com/jci_ariana_el_medina/" target="_blank" class="text-lg text-jci-teal hover:underline">@jci_ariana_el_medina/</a>
+                    <a href="https://www.instagram.com/jci_ariana_el_medina/" target="_blank"
+                        class="text-lg text-jci-teal hover:underline">@jci_ariana_el_medina/</a>
                 </div>
                 <div class="flex items-center space-x-3">
                     <svg class="w-6 h-6 text-jci-blue" fill="currentColor" viewBox="0 0 24 24">
-                        <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"></path>
+                        <path
+                            d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z">
+                        </path>
                     </svg>
-                    <a href="https://www.facebook.com/JCIArianaELMedina" target="_blank" class="text-lg text-jci-blue hover:underline">JCI Ariana EL Medina</a>
+                    <a href="https://www.facebook.com/JCIArianaELMedina" target="_blank"
+                        class="text-lg text-jci-blue hover:underline">JCI Ariana EL Medina</a>
                 </div>
             </div>
         </section>
@@ -413,4 +457,5 @@
         document.head.appendChild(style);
     </script>
 </body>
+
 </html>
